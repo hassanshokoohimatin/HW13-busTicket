@@ -35,7 +35,8 @@ public abstract class CrudRepository<Entity , ID extends Serializable> {
 
     public List<Entity> findAll(){
         getSession().beginTransaction();
-        Query<Entity> query = getSession().createQuery("from" + getEntityClass().getName() , getEntityClass());
+        Query<Entity> query = getSession()
+                .createQuery("from " + getEntityClass().getName(), getEntityClass());
         List<Entity> entities = query.list();
         getSession().getTransaction().commit();
         return entities;

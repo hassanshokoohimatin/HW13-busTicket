@@ -21,6 +21,6 @@ public class Trip {
     private String tripTime;
     private String tripId;
 
-    @OneToMany
-    private List<Ticket> tickets = new ArrayList<>();
+    @OneToMany(mappedBy = "trip")
+    private List<Ticket> ticketList = new ArrayList<>();
 }

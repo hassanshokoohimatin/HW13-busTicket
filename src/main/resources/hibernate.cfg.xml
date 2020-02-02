@@ -6,7 +6,7 @@
         <property name="hibernate.connection.username">hassan</property>
         <property name="hibernate.connection.password">43192431</property>
         <property name="hibernate.connection.url">
-            jdbc:mysql://localhost/busticket?createDatabaseIfNotExist=true;
+            jdbc:mysql://localhost/busticket?createDatabaseIfNotExist=true
         </property>
         <property name="hibernate.connection.driver_class">
             com.mysql.cj.jdbc.Driver
@@ -17,9 +17,9 @@
 
         <!-- mapping -->
 
-        <mapping class=""/>
-        <mapping class=""/>
-        <mapping class=""/>
+        <mapping class="ir.sunsor.entities.User"/>
+        <mapping class="ir.sunsor.entities.Ticket"/>
+        <mapping class="ir.sunsor.entities.Trip"/>
 
     </session-factory>
 </hibernate-configuration>
